@@ -68,7 +68,6 @@ Train the VPSDE model on CIFAR-10 while unlearning the target classes (*automobi
 python main.py --workdir ./results --task square --config ./configs/vp/ddpm/cifar10.py --mode train
 ```
 #### Finetuning
-Continue training (fine-tuning) from a pre-trained checkpoint:
 ```
 python main.py --config ./configs/vp/ddpm/cifar10_continuous.py --workdir ./results --task square --mode train --finetune
 ```
