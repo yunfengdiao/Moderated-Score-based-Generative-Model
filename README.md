@@ -60,23 +60,23 @@ main.py:
     --mode: <train|eval>: Running mode: train or eval
     --workdir: Working directory
 ```
-### Example
+### 💻 Example
 
-#### Training
+#### 🏋️ Training
 Train the VPSDE model on CIFAR-10 while unlearning the target classes (*automobile* and *dog*):
 ```
 python main.py --workdir ./results --task square --config ./configs/vp/ddpm/cifar10.py --mode train
 ```
-#### Finetuning
+#### 🏋🏋 Finetuning
 ```
 python main.py --config ./configs/vp/ddpm/cifar10_continuous.py --workdir ./results --task square --mode train --finetune
 ```
-#### Evaluation
+#### 📊 Evaluation
 ```
 python main.py --workdir ./results --task norm --config ./configs/vp/ddpm/cifar10_continuous.py --mode eval
 ```
 
-## Pretrained checkpoints
+## 📦 Pretrained checkpoints
 All checkpoints are shared through Baidu Netdisk:  [**MSGM.**](https://pan.baidu.com/s/5WRgVRe6gBBrj8wunth1viw)
 
 ## 🙏 Acknowledgments
